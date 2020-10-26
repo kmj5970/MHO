@@ -1,4 +1,4 @@
-package com.mho.www;
+package com.mho.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
