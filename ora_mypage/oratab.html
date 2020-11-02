@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <title>CSS Navigation bar</title>
+   <style>
+    ul { //메뉴 스타일
+         box-pack:center;
+                        justify-content: center; // 창에따라 사이즈 달라짐
+         background-color: #ffffff;
+         list-style-type: none;
+         margin: 50px; //메뉴 위치
+         padding: 50px;
+         overflow: hidden;
+      }
+      li { float: center; }
+      li a {
+         display: block;
+         background-color: #ffffff;
+         color: gray;
+         padding: 15px;
+         float: left;
+         width: 100px;
+         text-align: center;
+         text-decoration: none;
+         text-align: center;
+         font-weight: bold;
+      }
+      li a.current {
+         background-color: #FF6347; //주황색 클릭
+         color: white;
+      }
+      li a:hover:not(.current) {
+         background-color: #CD853F; //갈색 마우스위로
+         color: white;
+      }
+
+      <!-- 회원정보-->
+              #myinfo {
+                padding-left: 800px;
+                display: table;
+                padding: 100px;
+                width: 300px;
+              .row {
+
+              }
+              .display: table-row;
+              }
+              .cell {
+                display: table-cell;
+                padding: 20px;
+                border-bottom: 1px solid #DDD;
+              }
+              .col1 {
+                background-color:#F2F2F2;
+                text-align: center;
+                width: 100px;
+              }
+              .col2 {
+                padding-left: 20px;
+                width: 300px;
+              }
+
+
+
+   </style>
+
+</head>
+
+<body>
+   <ul>
+   <h1>마이페이지</h1>
+
+
+            <li><a class="current">정보수정</a></li>
+            <li><a href="/html/intro">찜목록</a></li>
+            <li><a href="/css/intro">내코스</a></li>
+            <li><a href="/bbs/login.php">내작성글</a></li>
+            <li><a href="/bbs/register_form.php">랭킹</a></li>
+
+      </ul>
+<ul>
+  <h1>정보수정</h1>
+   여기에 샬롸샬롸
+
+   <div>
+     <!--회원정보-->
+
+         <div id="myinfo">
+           <div class="row">
+             <span class="cell col1">아이디</span>
+             <span class="cell col2">cow</span>
+           </div>
+           <div class="row">
+             <span class="cell col1">비밀번호</span>
+             <span class="cell col2">password</span>
+           </div>
+           <div class="row">
+             <span class="cell col1">이름</span>
+             <span class="cell col2">김소</span>
+           </div>
+           <div class="row">
+             <span class="cell col1">전화번호</span>
+             <span class="cell col2">010-2341-2345</span>
+           </div>
+         <div class="row">
+           <span class="cell col1">성별</span>
+           <span class="cell col2">여자</span>
+         </div>
+         <div class="row">
+           <span class="cell col1">랭크이름</span>
+           <span class="cell col2">rank_name</span>
+           </div>
+
+         </div>
+
+</ul>
+</body>
+
+</html>
